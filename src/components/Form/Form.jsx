@@ -17,7 +17,7 @@ export const Form = ({ onSubmit }) => {
       name: e.target.elements.name.value,
       phone: e.target.elements.number.value,
     }
-    const dublContact = items.find(item => item.name === newContact.name);
+    const dublContact = items?.find(item => item.name === newContact.name);
     if (dublContact) {
       toast.error(`${newContact.name} is already in contacts`, {
         position: 'top-right',

@@ -2,9 +2,10 @@ export const handlePending = state => {
   state.isLoading = true;
 };
 
-export const handleRejected = (state, { payload }) => {
+export const handleRejected = (state, action) => {
   state.isLoading = false;
-  state.error = payload;
+  console.log(action)
+  state.error = action.payload;
 };
 
 export const handleFulfilledGet = (state, { payload }) => {
@@ -17,7 +18,7 @@ export const handleFulfilledGet = (state, { payload }) => {
 export const handleFulfilledAdd = (state, { payload }) => {
   state.isLoading = false;
   state.error = '';
-  state.items.push(payload);
+  state.contacts.items.push(payload);
 };
 export const handleFulfilledDelete = (state, { payload }) => {
   state.isLoading = false;

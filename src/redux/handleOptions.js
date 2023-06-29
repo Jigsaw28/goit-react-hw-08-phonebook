@@ -18,7 +18,7 @@ export const handleFulfilledGet = (state, { payload }) => {
 export const handleFulfilledAdd = (state, { payload }) => {
   state.isLoading = false;
   state.error = '';
-  state.contacts.items.push(payload);
+  state.items.push(payload);
 };
 export const handleFulfilledDelete = (state, { payload }) => {
   state.isLoading = false;

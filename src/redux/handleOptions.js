@@ -4,7 +4,7 @@ export const handlePending = state => {
 
 export const handleRejected = (state, action) => {
   state.isLoading = false;
-  console.log(action)
+  console.log(action.payload)
   state.error = action.payload;
 };
 

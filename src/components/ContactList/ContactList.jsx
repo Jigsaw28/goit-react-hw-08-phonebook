@@ -40,7 +40,7 @@ export const Contactlist = () => {
         {items?.length > 0
           ? filterName.map(item => (
               <Item key={item.id}>
-                {item.name}: {item.phone}
+                {item.name}: {item.number}
                 <Button
                   type="button"
                   aria-label="Close"

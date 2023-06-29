@@ -15,7 +15,7 @@ export const Form = ({ onSubmit }) => {
     e.preventDefault();
     const newContact = {
       name: e.target.elements.name.value,
-      phone: e.target.elements.number.value,
+      number: e.target.elements.number.value,
     }
     const dublContact = items?.find(item => item.name === newContact.name);
     if (dublContact) {

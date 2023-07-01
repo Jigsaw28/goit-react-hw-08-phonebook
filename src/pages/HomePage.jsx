@@ -1,14 +1,11 @@
-const HomePage = () => {
-    return (
-        <div>
-      <h1>
-        Contact book welcome page
-        <span role="img" aria-label="Greeting icon">
-          💁‍♀️
-        </span>
-      </h1>
-    </div>
-    )
-}
+import { Title, ContainerHome } from "./HomePage.styled";
 
-export default HomePage
+const HomePage = () => {
+  return (
+    <ContainerHome>
+      <Title>Contact book page</Title>
+    </ContainerHome>
+  );
+};
+
+export default HomePage;

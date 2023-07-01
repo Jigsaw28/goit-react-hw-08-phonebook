@@ -8,23 +8,23 @@ import { getContactsThunk } from 'redux/contactsThunk';
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
-    const { isLoggedIn } = useSelector(state => state.auth);
+  const { isLoggedIn } = useSelector(state => state.auth);
 
-    useEffect(() => {
-        if (isLoggedIn) {
-            dispatch(getContactsThunk());
-      }
+  useEffect(() => {
+    if (isLoggedIn) {
+      dispatch(getContactsThunk());
+    }
   }, [dispatch, isLoggedIn]);
 
-  return (
-      <Container>
-        <h1>Phonebook</h1>
-        <Form />
-        <h2>Contacts</h2>
-        <Filter />
-        <Contactlist />
-      </Container>
-  );
+  return  (
+    <Container>
+      <h1>Phonebook</h1>
+      <Form />
+      <h2>Contacts</h2>
+      <Filter />
+      <Contactlist />
+    </Container>
+  ) 
 };
 
 export default ContactsPage;

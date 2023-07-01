@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[877],{2877:function(e,n,t){t.r(n),t.d(n,{default:function(){return s}});var c,r,i=t(168),o=t(5867),a=o.zo.h1(c||(c=(0,i.Z)(["\n  font-size: 80px;\n"]))),h=o.zo.div(r||(r=(0,i.Z)(["\n  min-height: calc(100vh - 50px);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n"]))),l=t(184),s=function(){return(0,l.jsx)(h,{children:(0,l.jsx)(a,{children:"Contact book page"})})}}}]);
+//# sourceMappingURL=877.79aee918.chunk.js.map

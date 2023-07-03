@@ -2,16 +2,19 @@ import { NavLink } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 export const LinkNavigate = styled(NavLink)`
-  color: #000;
-
   &:hover {
-    color: #f08080;
-  }
-
-  &:last-of-type{
-    padding-left: 10px;
+    color: #2196f3;
   }
 `;
+
+export const LinkContact = styled(NavLink)`
+  margin-left: 10px;
+  
+  &:hover {
+    color: #2196f3;
+  }
+`;
+
 export const Nav = styled.div`
   padding-left: 20px;
   display: flex;

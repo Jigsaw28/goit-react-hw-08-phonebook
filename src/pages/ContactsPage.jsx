@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Form } from 'components/Form/Form';
 import { Filter } from 'components/Filter/Filter';
 import { Contactlist } from 'components/ContactList/ContactList';
-import { Container } from 'components/App.styled';
+import { ContainerContacts } from './ContactsPage.styled';
 import { getContactsThunk } from 'redux/contactsThunk';
 
 const ContactsPage = () => {
@@ -17,13 +17,13 @@ const ContactsPage = () => {
   }, [dispatch, isLoggedIn]);
 
   return  (
-    <Container>
+    <ContainerContacts>
       <h1>Phonebook</h1>
       <Form />
       <h2>Contacts</h2>
       <Filter />
       <Contactlist />
-    </Container>
+    </ContainerContacts>
   ) 
 };
 

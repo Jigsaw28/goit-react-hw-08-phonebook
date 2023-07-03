@@ -28,7 +28,7 @@ export const Contactlist = () => {
         <Circles
           height="80"
           width="80"
-          color="#F08080"
+          color="#2196f3"
           ariaLabel="circles-loading"
           wrapperStyle={{}}
           wrapperClass="Loader"
